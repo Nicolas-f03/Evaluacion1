@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="with-device-with, intial-scale=1.0">
+        <title>Persona 1 guia - todo lo que necesitas saber sobre el rpg japones</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <Div class="logo"><a href="#"></a>Guia persona 1</Div>
+                <ul class="menu">
+                   <li><a href="#personas">Personas</a></li>
+                   <li><a href="#Fusiones">Fusiones</a></li>
+                   <li><a href="#abilidades">Abilidades</a></li>
+                   <li><a href="#guia">Guia</a></li>
+                   <li><a href="#contactos">contactos</a></li>
+                </ul>
+                <div class="toggle_bnt">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="#personas">Personas</a></li>
+                <li><a href="#Fusiones">Fusiones</a></li>
+                <li><a href="#abilidades">Abilidades</a></li>
+                <li><a href="#guia">Guia</a></li>
+                <li><a href="#contactos">contactos</a></li>
+            </div>
+        </header>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_bnt')
+            const toggleBtnIcon = document.querySelector('.toggle_bnt i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const IsOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = IsOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+        <Section class="hero" id="inico">
+            <div class="hero-text">
+                <h1>guia suprema de persona 1</h1>
+                <h2></h2>
+            </div>
+        </Section>
+        <footer id="contactos">
+            <Div class="footer"><a href="#">contactos:nicolas.ferreira03@inacapmail.cl| telefono: +56 9 7957 5341</a></Div>
+            <div class="footer"><a href="#">@perosona1guia todos los derechos reservados</a></div>
+        </footer>
+    </body>
+</html>
