@@ -90,4 +90,17 @@ document.getElementById("registroForm").addEventListener("submit",function (e){
 
     document.getElementById("mensaje").textContent =
         "formulario enviado correctamente.";
+
+    const archivo = document.getElementById("archivo").files[0];
+
+    if (!archivo) {
+      alert("Debe subir un archivo");
+      return;
+    }
+
+    if (!archivo.name.endsWith(".csv")) {
+        alert("El archivo debe ser CSV");
+      return;
+    }
 });
+
